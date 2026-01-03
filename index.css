@@ -1,0 +1,39 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+body{
+    background-color:cornsilk;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo{
+  /*  :hover{
+        background-color: brown;
+    } hover isn't working because it isn't part of another tag, like <h1> or <p>*/
+    padding-left: 4%;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+
+.header .nav-items{
+    :hover{
+        background-color: aquamarine;
+    }
+    font-size:x-large;
+    font-weight: 700;
+    padding-right: 4%;
+}
+
+.center_container{
+    margin-left: 15%;
+    margin-right: 15%;
+    text-wrap-mode: wrap;
+    text-align: center;
+    height: 100%;
+
+}
