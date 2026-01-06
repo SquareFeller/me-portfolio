@@ -1,5 +1,17 @@
+/*
+Poppins font created by Jonny Pinhorn and ITF. Found here: https://open-foundry.com/fonts/poppins
+*/
+@font-face {
+    font-family: 'Poppins';
+    src: url(Poppins-Regular.otf);
+}
 *{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-family:'Poppins','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
 }
 
 body{
@@ -8,32 +20,99 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
+    background-color: chocolate;
+    padding-bottom: 1%;
 }
 
-.header .logo{
-  /*  :hover{
-        background-color: brown;
-    } hover isn't working because it isn't part of another tag, like <h1> or <p>*/
+.name{
     padding-left: 4%;
     font-size: x-large;
-    font-weight: 700;
+    padding-top: 0%;
+}
+
+.img-container{
+    display: flex;
+    :hover{
+        cursor: url('scooby_snack.png'),auto;
+    }
+}
+
+.scoob{
+    max-width: 120px;
+    max-height: 120px;
 }
 
 
 .header .nav-items{
+    padding-top: 0.5%;
+    font-size: x-large;
+    font-weight: 700;
+    padding-right: 3%;
     :hover{
         background-color: aquamarine;
     }
-    font-size:x-large;
-    font-weight: 700;
-    padding-right: 4%;
+}
+
+.nav-links{
+    display: flex;
+    text-decoration: none;
 }
 
 .center_container{
-    margin-left: 15%;
-    margin-right: 15%;
+    display: flex;
+    flex-direction: row-reverse;
     text-wrap-mode: wrap;
     text-align: center;
     height: 100%;
+    padding-top: 2%;
 
+}
+
+.profile-pic-container{
+    margin-right: 4%;
+}
+
+.profile-pic{
+    max-width: 700px;
+}
+
+.intro-text{
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: x-large;
+    margin-bottom: 8%;
+}
+
+footer{
+    background-color: salmon;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+
+.legal-text{
+    padding-left: 2%;
+}
+
+iframe{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: auto;
+}
+
+hr{
+    border: 2px dashed cornflowerblue;
+}
+
+
+@media screen and (max-width:1095px) {
+    .center_container{
+        flex-direction: column;
+    }
+    .profile-pic{
+        max-width: 450px;
+    }
+    
 }
