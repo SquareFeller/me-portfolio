@@ -1,6 +1,10 @@
 /*
 Poppins font created by Jonny Pinhorn and ITF. Found here: https://open-foundry.com/fonts/poppins
 */
+
+html{
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: 'Poppins';
     src: url(Poppins-Regular.otf);
@@ -20,7 +24,8 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-    background-color: chocolate;
+  /*  background-color: chocolate;*/
+    background-color: salmon;
     padding-bottom: 1%;
 }
 
@@ -33,7 +38,7 @@ body{
 .img-container{
     display: flex;
     :hover{
-        cursor: url('scooby_snack.png'),auto;
+        cursor: url('img/scooby_snack.png'),auto;
     }
 }
 
@@ -77,10 +82,41 @@ body{
 }
 
 .intro-text{
+    font-size: x-large;
     margin-left: 8%;
     margin-right: 8%;
-    font-size: x-large;
     margin-bottom: 8%;
+}
+
+.projects-container{
+    margin-left: 1%;
+    padding-top: 5%;
+}
+
+
+
+
+.projects-grid{
+    display: grid;
+    padding-top: 5px ;
+}
+
+.miasma-container{
+    margin: 0;
+    width: 45%;
+    background-color: rgba(128,0,128, 0.4);
+}
+
+.game-title{
+    text-align: center;
+    text-decoration: 2px underline gray;
+}
+
+.miasma-screenshot{
+    display: flex;
+    width: 100% ;
+    object-fit: cover;
+    padding: 5px;
 }
 
 footer{
@@ -106,13 +142,37 @@ hr{
     border: 2px dashed cornflowerblue;
 }
 
+@media screen and (max-width:1470px){
+
+    .intro-text{
+        margin: 2%;
+        text-align: left;
+        font-size: large;
+    }
+
+}
 
 @media screen and (max-width:1095px) {
     .center_container{
         flex-direction: column;
     }
     .profile-pic{
+        width: 75%;
+        height: 100%;
         max-width: 450px;
+    }
+
+    .projects-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-text{
+        text-align: center;
+    }
+
+    .miasma-container{
+        width: 99%;
     }
     
 }

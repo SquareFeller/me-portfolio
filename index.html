@@ -5,29 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio :D</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/9190c724da.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="header">
       <div class="name">
         <h3>Isai Rincon</h3>
         <div class="img-container">
-          <img src="hungry_scoob.jpg" alt="scoob" class="scoob" />
+          <img src="img/hungry_scoob.jpg" alt="scooby-doo" class="scoob" />
         </div>
       </div>
       <div class="nav-items">
-        <a class="nav-links" href="/">Projects</a>
+        <a class="nav-links" href="#projects-header">Projects</a>
         <a class="nav-links" href="/">About</a>
         <a class="nav-links" href="/">Contact</a>
       </div>
     </nav>
 
     <div class="center_container">
-      <div class="profile-pic-container">
+      <div class="profile-pic-container" style="padding-bottom: 3%;">
         <img
-          src="profile_pic.png"
+          src="img/profile_pic.png"
           alt="profile picture of me"
           class="profile-pic"
-        />
+        /><br>
+        <caption style="text-align: center;"><small>(picture taken in June 2025)</small></caption>
       </div>
       <div class="intro-text">
         <h1>Welcome! 👋🏽</h1>
@@ -37,22 +42,77 @@
           Cruz in 2025! I grew up loving video games so much that I eventually
           wanted to develop some of my own! Fresh out of college, I'm aiming to
           really jumpstart my career as a game developer and would love to
-          <strong><a href="/">hear from you!!</a></strong> In the meantime, I'm
+          <strong><a href="/">chat with you!!</a></strong> In the meantime, I'm
           continuing to reach out and hone my skills in web dev and game dev
-          (and playing video games, of course).
+          (and playing video games, of course). <br />
+          <small
+            ><i
+              >Also feel free to listen to the music at the bottom. Will
+              continuously update it with games I have played or plan to
+              play!</i
+            >
+          </small>
         </p>
       </div>
     </div>
-    <hr>
+    <hr />
+    <div class="projects-container" id="projects-header">
+      <div style="font-size: x-large;">
+        <h1>Projects 🎮👾</h1>
+        <h4 style="color: gray">The games I've made since starting college!</h4>
+        <br />
+      </div>
+      <div class="projects-grid">
+        <article class="miasma-container">
+          <div class="game-title">
+            <h1>
+              Markus's Miasma
+              <a
+                href="https://store.steampowered.com/app/3674920/Markuss_Miasma/"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-steam fa-beat"
+                  style="color: #ffffff; padding-left: 5px"
+                >
+                </i>
+              </a>
+            </h1>
+            <div>
+              <img
+                src="img/miasma_screenshot.jpg"
+                alt="screenshot of Markus's Miasma"
+                class="miasma-screenshot"
+              />
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
 
     <!--TODO: Organize the next section for your projects below your brief welcome (figure out what you want to show and how much information you want to share (which will also need to be organized and formatted)) Maybe use dashed lines to indicate that we're in a new section, like: https://marighoul.com/about
         TODO: Figure out how to make your nav links actually work and what you might actually want them to say (e.g. should About even be there? should it be called About Me? should it lead to a separate page altogether where I can dive deep into my history with games, etc? )
-        TODO: It's a stretch, but I really want there to be a little music player (probably from Bandcamp b/c we gotta support artists!) However, it probably only works best if we stick to only one page, so that the music can continue to play! If so, for the projects, we can take a page out of Kaylee's and Nat's websites and have the user click on the project screenshot or something to expand it (maybe overlay a small container over it with more details and info and all that jazz)). ALSO, maybe put the music player in the footer? 
+
+        TODO: For the projects, we can take a page out of Kaylee's and Nat's websites and have the user click on the project screenshot or something to expand it (maybe overlay a small container over it with more details and info and all that jazz)). So under the image for each game, add a quick description (either from Steam or itch) or come up with one surrounding development and your role. And then underneath that description, have a button or something with like a "Dive Deeper!" CTA that then brings up the more detailed info of the development, engine, team size, role, etc. 
+
+        TODO: Keep messing around with more font sizes and alignments and stuff to account for different display sizes!!
+
+
     -->
+
+    <!--instead of doing this footer stuff, just have this as a div at the very end of the body section
     <footer>
-            <p class="legal-text">jumpscare! boo!
-            </p>
+      <p class="legal-text">jumpscare! boo!</p>
     </footer>
-    <iframe style="border: 0; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=760759285/size=small/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="https://triggandgusset.bandcamp.com/album/blue-prince-the-original-soundtrack">Blue Prince - The Original Soundtrack by Trigg &amp; Gusset</a></iframe>
+  -->
+    <iframe
+      style="border: 0; height: 42px"
+      src="https://bandcamp.com/EmbeddedPlayer/album=2708032815/size=small/bgcol=333333/linkcol=FF5CFF/transparent=true/"
+      seamless
+      ><a
+        href="https://lifeformed.bandcamp.com/album/tunic-original-game-soundtrack"
+        >TUNIC (Original Game Soundtrack) by Lifeformed × Janice Kwan</a
+      ></iframe
+    >
   </body>
 </html>
