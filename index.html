@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,10 +22,9 @@
           <img src="img/hungry_scoob.jpg" alt="scooby-doo" class="scoob" />
         </div>
       </div>
-      <div class="nav-items">
-        <a class="nav-links" href="#projects-header">Projects</a>
-        <a class="nav-links" href="/">About</a>
-        <a class="nav-links" href="/">Contact</a>
+      <div class="nav-items" style="font-size: xx-large">
+        <a class="nav-links" href="#projects">Projects</a>
+        <a class="nav-links" href="#contact">Contact</a>
       </div>
     </nav>
 
@@ -48,9 +47,9 @@
           Cruz in 2025! I grew up loving video games so much that I eventually
           wanted to develop some of my own! Fresh out of college, I'm aiming to
           really jumpstart my career as a game developer and would love to
-          <strong><a href="/">chat with you!!</a></strong> In the meantime, I'm
-          continuing to reach out and hone my skills in web dev and game dev
-          (and playing video games, of course). <br />
+          <strong><a href="#contact">chat with you!!</a></strong> In the
+          meantime, I'm continuing to reach out and hone my skills in web dev
+          and game dev (and playing video games, of course). <br />
           <small
             ><i
               >Also feel free to listen to the music at the bottom. Will
@@ -62,19 +61,22 @@
       </div>
     </div>
     <h1 style="text-align: center">My Resume!</h1>
-    <h4 style="text-align: center;"><a href="Isai Rincon - Resume (CS).pdf#" target="_blank">(download link)</a></h4>
+    <h4 style="text-align: center">
+      <a href="Isai Rincon - Resume (CS).pdf#" target="_blank"
+        >(download link)</a
+      >
+    </h4>
     <div class="resume-container">
-    <object
+      <object
         class="resume-viewer"
         data="Isai Rincon - Resume (CS).pdf"
         type="application/pdf"
         width="100%"
         title="Embedded PDF Viewer"
-      >
-      </object>
+      ></object>
     </div>
     <hr />
-    <div class="projects-container" id="projects-header">
+    <div class="projects-container" id="projects">
       <div style="font-size: x-large">
         <h1>Projects 🎮👾</h1>
         <h4 style="color: gray">
@@ -102,7 +104,7 @@
               <img
                 src="img/miasma_screenshot.jpg"
                 alt="screenshot of Markus's Miasma"
-                class="miasma-screenshot"
+                class="screenshot"
               />
             </div>
           </div>
@@ -117,22 +119,30 @@
             <button class="miasma-btn">Dive Deeper!</button>
           </div>
           <div>
-            <dialog class="modal">
+            <dialog class="modal" style="border-radius: 2%" id="miasma-modal">
               <div class="return">
                 <button autofocus class="return-btn">Return</button>
               </div>
               <div class="content">
-                <div class="miasma-vid-container" style="align-content: center;">
+                <div class="miasma-vid-container" style="align-content: center">
                   <iframe
-                  class="miasma-vid"
-                  height="100%"
-                  src="https://www.youtube.com/embed/xxYVIywezPc?si=MW7RZ6-fgvVJxmZj"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
+                    class="miasma-vid"
+                    height="100%"
+                    src="https://www.youtube.com/embed/xxYVIywezPc?si=MW7RZ6-fgvVJxmZj"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="
+                      accelerometer;
+                      autoplay;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                      web-share;
+                    "
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
                 </div>
                 <br />
                 <div style="font-size: large; text-align: left">
@@ -149,18 +159,257 @@
                   </a>
                 </div>
                 <h1>Development</h1>
-                <br />
                 <p>
-                  Markus's Miasma began development in my senior year at UCSC. Over the course of 6 months, we, as a team of 8, ideated, designed, playtested, iterated, and ultimately published our game on Steam. <br>
-                  We developed our game in <strong>Unity</strong>
+                  <i>Markus's Miasma</i> began development in my senior year at
+                  UCSC. Over the course of 6 months, we, as a team of 8,
+                  ideated, designed, playtested, iterated, and ultimately
+                  published our game on Steam. <br />
+                  We developed our game in <strong>Unity</strong> as our group
+                  was the most comfortable with that engine. We also made use of
+                  the scrum framework with <strong>taiga.io</strong> serving as
+                  our project management tool.
                 </p>
+                <h1>My Role</h1>
+                <p>
+                  At the start of development, I assisted with general ideation,
+                  moodboards, story concept, and basic player movement.
+                  Eventually, as the weeks went on, I moved into
+                  <strong>gameplay programming</strong> and
+                  <strong>SFX design and implementation</strong>. I found music
+                  from opengameart.org and sounds from freesound (and even got
+                  to record some of my own!), and then had to implement them,
+                  keeping a close eye (ear?) on timing and volume mixing. <br />
+                  In addition to audio design, I was often one of the main
+                  <strong>QA testers</strong>, frequently looking for and
+                  squashing bugs and creating playable builds of our game for
+                  every significant milestone!
+                </p>
+                <h1>Skills Used & Gained</h1>
+                <ul style="margin-left: 2%">
+                  <li>Unity Development</li>
+                  <li>Audio/SFX Design</li>
+                  <li>Scrum/Agile Framework</li>
+                  <li>QA Testing</li>
+                  <li>Collaboration</li>
+                  <li>Creative Thinking</li>
+                  <li>Publishing</li>
+                  <!--maybe add more as they come up-->
+                </ul>
               </div>
             </dialog>
           </div>
         </article>
+
+        <article class="wizard-container">
+          <div class="game-title">
+            <h1>
+              Wizard Wobble
+              <a
+                href="https://spaceface54.itch.io/wizard-wobble"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-itch-io fa-flip"
+                  style="color: #ffffff; padding-left: 5px"
+                >
+                </i>
+              </a>
+            </h1>
+            <div>
+              <img
+                src="img/wizard_screenshot.png"
+                alt="screenshot of Wizard Wobble"
+                class="screenshot"
+              />
+            </div>
+          </div>
+          <div>
+            <p class="game-blurb">
+              The wizard's lost his keys again! Now the only way he can get back
+              inside is by magically placing platforms to reach the window at
+              the top of his tower. But placing helpful platforms isn't cheap.
+              He'll have to also place some harmful enemies in his way if he
+              wants to get his mana back.
+            </p>
+          </div>
+          <div class="btn">
+            <button class="wizard-btn">Learn More!</button>
+          </div>
+          <div>
+            <dialog class="modal" style="border-radius: 2%" id="wizard-modal">
+              <div class="return">
+                <button autofocus class="return-btn">Return</button>
+              </div>
+              <div class="content">
+                <br />
+                <img src="img/wizard_cover.png" alt="Wizard Wobble cover art" />
+                <h1>Development</h1>
+                <p>
+                  <i>Wizard Wobble</i> was developed in 5 weeks in my first game
+                  design course at UCSC -
+                  <i>CMPM 80K: Foundations of Video Game Design</i>. We were
+                  given the theme "gauntlet" which we interpreted as a trial of
+                  sorts. As a team of 3, we used the
+                  <strong>Construct 3 Game Engine</strong> and its limited
+                  number of events. We had to come up with the basic idea of the
+                  game in the first week and then spent the next four designing,
+                  playtesting, and iterating.
+                </p>
+                <h1>My Role</h1>
+                <p>
+                  I was one of two <strong>programmers</strong> on the team. I
+                  spent a lot of time working on
+                  <strong>character feel and movement</strong>, as well as
+                  <strong>enemy design</strong> (special shout-out to the laser
+                  octopus and the persistent orb of doom). I was also a
+                  note-taker during playtesting, gathering feedback from players
+                  to inform our next round of iteration.
+                </p>
+                <h1>Skills Used & Gained</h1>
+                <ul style="margin-left: 2%">
+                  <li>Construct 3 Development</li>
+                  <li>Player Movement</li>
+                  <li>Productive Playtesting</li>
+                  <li>Enemy Design</li>
+                  <li>Collaboration</li>
+                  <li>Creative Thinking</li>
+                  <li>Rapid Iteration</li>
+                  <!--maybe add more as they come up-->
+                </ul>
+              </div>
+            </dialog>
+          </div>
+        </article>
+
+        <article class="deal-container">
+          <div class="game-title">
+            <h1>
+              Killer Deal
+              <a href="https://spaceface54.itch.io/killer-deal" target="_blank">
+                <i
+                  class="fa-brands fa-itch-io fa-flip"
+                  style="color: #ffffff; padding-left: 5px"
+                >
+                </i>
+              </a>
+            </h1>
+            <div>
+              <img
+                src="img/deal_screenshot.png"
+                alt="screenshot of Killer Deal"
+                class="screenshot"
+              />
+            </div>
+          </div>
+          <div>
+            <p class="game-blurb">
+              The dead of night. The only light you have is the one coming from
+              your TV. There's nothing on right now except infomercials on
+              infomercials. You have some cash. Why not call the numbers on
+              screen? It might make all the difference...
+            </p>
+          </div>
+          <div class="btn">
+            <button class="deal-btn">Call Now!</button>
+          </div>
+          <div>
+            <dialog class="modal" style="border-radius: 2%" id="deal-modal">
+              <div class="return">
+                <button autofocus class="return-btn">Return</button>
+              </div>
+              <div class="content">
+                <br />
+                <img src="img/deal_eyes.png" alt="Eyes from Killer Deal" />
+                <h1>Development</h1>
+                <p>
+                  <i>Killer Deal</i> was developed in a week as a submission for
+                  the
+                  <a href="https://itch.io/jam/shroomjam-2025" target="_blank"
+                    >ShroomJam 2025!</a
+                  >
+                  It was developed after graduation and we were the same
+                  3-person team that made <i>Wizard Wobble</i>! Our engine of
+                  choice this time was <strong>Godot</strong> as we set out to
+                  make a game that fit the theme of "Retro TV". This game was
+                  also an opportunity for us to experiment with
+                  <strong>mixed media</strong> -- combining pixel art with
+                  live-action video. For our efforts, we were ranked
+                  <strong>#8 in Audio</strong> and
+                  <strong>#1 in Theme Use</strong>.
+                </p>
+                <h1>My Role</h1>
+                <p>
+                  I was one of two <strong>programmers</strong> on the team.
+                  Since the game was largely point-and-click, I chose to devote
+                  most of my effort to gathering the roughly 40 video files that
+                  would be in our game. I was so enthused by it because having
+                  some live-action element in a game I contributed to has been a
+                  desire of mine ever since I devoured <i>Alan Wake 2</i>. I
+                  became very familiar with
+                  <strong>video compression and conversion</strong> as a result.
+                  I implemented the videos into the game along with the music
+                  and SFX, so I was back at it being an
+                  <strong>audio designer</strong> and all-around bug-squasher.
+                </p>
+                <h1>Skills Used & Gained</h1>
+                <ul style="margin-left: 2%">
+                  <li>Godot Development</li>
+                  <li>Video Conversion</li>
+                  <li>Audio Design</li>
+                  <li>QA Testing</li>
+                  <li>Collaboration</li>
+                  <li>Creative Thinking</li>
+                  <!--maybe add more as they come up-->
+                </ul>
+              </div>
+            </dialog>
+          </div>
+        </article>
+        <h1 style="align-self: center">
+          For even more projects, feel free to visit my
+          <a href="https://isas2000.itch.io/" target="_blank"
+            >itch.io profile page!!</a
+          >
+        </h1>
       </div>
     </div>
 
+    <hr />
+    <div class="contact-container" id="contact">
+      <div style="font-size: x-large">
+        <h1 style="margin-left: 1%">Let's Chat!</h1>
+        <div class="links-container">
+          <div class="contact-button">
+            <h2>
+              <i class="fa-regular fa-paper-plane"></i>
+              <a href="mailto:isai.rincon17@gmail.com"
+                >isai.rincon17@gmail.com</a
+              >
+            </h2>
+          </div>
+
+          <div class="contact-button">
+            <h2>
+              <i class="fa-solid fa-phone"></i>
+              <span>+13235593646</span>
+            </h2>
+          </div>
+
+          <div class="contact-button">
+            <h2>
+              <i class="fa-brands fa-linkedin fa-lg"></i>
+              <a
+                href="https://www.linkedin.com/in/isai-rincon-a4820a20b"
+                target="_blank"
+                >https://www.linkedin.com/in/isai-rincon-a4820a20b
+              </a>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
     <!--TODO: Organize the next section for your projects below your brief welcome (figure out what you want to show and how much information you want to share (which will also need to be organized and formatted)) Maybe use dashed lines to indicate that we're in a new section, like: https://marighoul.com/about
         TODO: Figure out how to make your nav links actually work and what you might actually want them to say (e.g. should About even be there? should it be called About Me? should it lead to a separate page altogether where I can dive deep into my history with games, etc? )
 
@@ -178,16 +427,19 @@
       <p class="legal-text">jumpscare! boo!</p>
     </footer>
   -->
-    <iframe
-      class="bandcamp-player"
-      style="border: 0; height: 42px"
-      src="https://bandcamp.com/EmbeddedPlayer/album=2708032815/size=small/bgcol=333333/linkcol=FF5CFF/transparent=true/"
-      seamless
-      ><a
-        href="https://lifeformed.bandcamp.com/album/tunic-original-game-soundtrack"
-        >TUNIC (Original Game Soundtrack) by Lifeformed × Janice Kwan</a
-      ></iframe
-    >
+    <div>
+      <iframe
+        class="bandcamp-player"
+        style="border: 0; height: 42px"
+        src="https://bandcamp.com/EmbeddedPlayer/album=2708032815/size=small/bgcol=333333/linkcol=FF5CFF/transparent=true/"
+        seamless
+        ><a
+          href="https://lifeformed.bandcamp.com/album/tunic-original-game-soundtrack"
+          >TUNIC (Original Game Soundtrack) by Lifeformed × Janice Kwan</a
+        ></iframe
+      >
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
