@@ -335,6 +335,10 @@ hr{
         width: 99%;
     }
 
+    .wizard-container .screenshot{
+        width: 95%;
+    }
+
     .deal-container{
         margin-top: 5%;
         width: 99%;
