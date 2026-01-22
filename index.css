@@ -2,347 +2,348 @@
 Poppins font created by Jonny Pinhorn and ITF. Found here: https://open-foundry.com/fonts/poppins
 */
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 @font-face {
-    font-family: 'Poppins';
-    src: url(Poppins-Regular.otf);
+  font-family: "Poppins";
+  src: url(Poppins-Regular.otf);
 }
-*{
-    font-family:'Poppins','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    border: none;
-    box-sizing: border-box;
-}
-
-body{
-    background-color:cornsilk;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-  /*  background-color: chocolate;*/
-    background-color: salmon;
-    padding-bottom: 1%;
-    width: 100%;
+* {
+  font-family:
+    "Poppins", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
 }
 
-.name{
-    padding-left: 4%;
-    font-size: x-large;
-    padding-top: 0%;
+body {
+  background-color: cornsilk;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: salmon;
+  padding-bottom: 1%;
+  width: 100%;
 }
 
-.img-container{
-    display: flex;
-    :hover{
-        cursor: url('img/scooby_snack.png'),auto;
-    }
+.name {
+  padding-left: 4%;
+  font-size: x-large;
+  padding-top: 0%;
 }
 
-.scoob{
-    max-width: 120px;
-    max-height: 120px;
+.img-container {
+  display: flex;
+  :hover {
+    cursor: url("img/scooby_snack.png"), auto;
+  }
 }
 
-
-.header .nav-items{
-    padding-top: 0.5%;
-    font-size: x-large;
-    font-weight: 700;
-    padding-right: 3%;
-    :hover{
-        background-color: aquamarine;
-    }
+.scoob {
+  max-width: 120px;
+  max-height: 120px;
 }
 
-.nav-links{
-    display: flex;
-    text-decoration: none;
+.header .nav-items {
+  padding-top: 0.5%;
+  font-size: x-large;
+  font-weight: 700;
+  padding-right: 3%;
+  :hover {
+    background-color: rgb(248, 232, 232);
+    text-decoration: underline;
+  }
 }
 
-.center_container{
-    display: flex;
-    flex-direction: row-reverse;
-    text-wrap-mode: wrap;
-    text-align: center;
-    height: 100%;
-    padding-top: 2%;
-
+.nav-links {
+  display: flex;
+  text-decoration: none;
 }
 
-.profile-pic-container{
-    margin-right: 4%;
+.center_container {
+  display: flex;
+  flex-direction: row-reverse;
+  text-wrap-mode: wrap;
+  text-align: center;
+  height: 100%;
+  padding-top: 2%;
 }
 
-.profile-pic{
-    max-width: 700px;
+.profile-pic-container {
+  margin-right: 4%;
 }
 
-.intro-text{
-    font-size: x-large;
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-bottom: 8%;
+.profile-pic {
+  max-width: 700px;
 }
 
-.resume-container{
-    display: flex;
-    justify-content: center;
-    height: 1000px;
-    padding-bottom: 1rem;
+.intro-text {
+  font-size: x-large;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 8%;
 }
 
-.resume-viewer{
-    width: 70%;
-    height: 100%;
+.resume-container {
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+  padding-bottom: 1rem;
 }
 
-.projects-container{
-    margin-left: 1%;
-    padding-top: 5%;
-    padding-bottom: 8%;
+.resume-viewer {
+  width: 70%;
+  height: 100%;
 }
 
-.projects-grid{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    padding-top: 5px;
+.projects-container {
+  margin-left: 1%;
+  padding-top: 5%;
+  padding-bottom: 8%;
 }
 
-.miasma-container{
-    margin: 0;
-    width: 95%;
-    background-color: rgba(128, 0, 128, 0.596);
-    border-radius: 10px;
-    border: 0;
+.projects-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding-top: 5px;
 }
 
-.game-title{
-    text-align: center;
-    text-decoration: 1px underline rgb(72, 67, 67);
+.miasma-container {
+  margin: 0;
+  width: 95%;
+  background-color: rgba(128, 0, 128, 0.596);
+  border-radius: 10px;
+  border: 0;
 }
 
-.screenshot{
-    display: flex;
-    width: 100% ;
-    object-fit: cover;
-    padding: 5px;
+.game-title {
+  text-align: center;
+  text-decoration: 1px underline rgb(72, 67, 67);
 }
 
-.game-blurb{
-    padding: 5px;
-    font-size: large;
-    font-weight: 600;
+.screenshot {
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+  padding: 5px;
 }
 
-.btn{
-    text-align: center;
-    padding-bottom: 8px;
+.game-blurb {
+  padding: 5px;
+  font-size: large;
+  font-weight: 600;
 }
 
-.miasma-btn{
-    color: aliceblue;
-    border-radius: 25px;
-    font-size: large;
-    background-image: linear-gradient(
-        330deg,
-        magenta,
-        purple,
-        black
-    );
-    padding: 1rem;
-    cursor: pointer;
+.btn {
+  text-align: center;
+  padding-bottom: 8px;
 }
 
-.wizard-container{
-    width: 95%;
-    margin: 0;
-    background-color: rgba(123, 84, 229, 0.907);
-    border-radius: 10px;
-    border: 0;
+.miasma-btn {
+  color: aliceblue;
+  border-radius: 25px;
+  font-size: large;
+  background-image: linear-gradient(330deg, magenta, purple, black);
+  padding: 1rem;
+  cursor: pointer;
 }
 
-.wizard-btn{
-    color: rgb(146, 241, 184);
-    border-radius: 12px;
-    font-size: large;
-    background-color: black;
-    padding: 1rem;
-    cursor: pointer;
+.wizard-container {
+  width: 95%;
+  margin: 0;
+  background-color: rgba(123, 84, 229, 0.907);
+  border-radius: 10px;
+  border: 0;
 }
 
-.deal-container{
-    width: 95%;
-    margin: 0;
-    margin-top: 2%;
-    background-color: rgba(62, 150, 206, 0.907);
-    border-radius: 75px;
-    border:0;
+.wizard-btn {
+  color: rgb(146, 241, 184);
+  border-radius: 12px;
+  font-size: large;
+  background-color: black;
+  padding: 1rem;
+  cursor: pointer;
 }
 
-.deal-btn{
-    color: rgb(0, 0, 0);
-    border-radius: 12px;
-    font-size: large;
-    font-weight: 900;
-    background-color: rgb(174, 3, 3);
-    padding: 1rem;
-    cursor: pointer;
+.deal-container {
+  width: 95%;
+  margin: 0;
+  margin-top: 2%;
+  background-color: rgba(62, 150, 206, 0.907);
+  border-radius: 75px;
+  border: 0;
+}
+
+.deal-btn {
+  color: rgb(0, 0, 0);
+  border-radius: 12px;
+  font-size: large;
+  font-weight: 900;
+  background-color: rgb(174, 3, 3);
+  padding: 1rem;
+  cursor: pointer;
 }
 
 /* modal CSS from  https://medium.com/@ResearchNowEng/making-perfectly-sized-centered-scrollable-modals-a36da09b68e6          */
 
 .modal {
-        position:fixed;
-        top:50%;
-        left:50%;
-        transform:translate(-50%,-50%);
-        box-sizing:border-box;
-        width:600px;
-        max-width:calc(100% - 80px);
-        max-height:calc(100% - 80px);
-        overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  width: 600px;
+  max-width: calc(100% - 80px);
+  max-height: calc(100% - 80px);
+  overflow: hidden;
 }
 
 .modal .content {
-    overflow:auto;
-    max-height:calc(100vh - 125px);
-    padding: 25px;
+  overflow: auto;
+  max-height: calc(100vh - 125px);
+  padding: 25px;
 }
 
-.return{
-    text-align: right;
-    padding-top: 2%;
-    padding-right: 2%;
-    overflow: hidden;
-
+.return {
+  text-align: right;
+  padding-top: 2%;
+  padding-right: 2%;
+  overflow: hidden;
 }
 
-.return-btn{
+.return-btn {
+  font-size: large;
+  border: 0;
+  border-radius: 25px;
+  padding: 2%;
+  cursor: pointer;
+}
+
+::backdrop {
+  background-color: rgba(157, 28, 157, 0.462);
+  opacity: 0.95;
+  backdrop-filter: blur(2px);
+}
+
+.contact-container {
+  margin-left: 1%;
+  padding-top: 5%;
+  padding-bottom: 8%;
+}
+.links-container {
+  display: grid;
+}
+.contact-button {
+  width: auto;
+  margin-left: 4%;
+  text-align: left;
+  min-height: 80px;
+  margin-top: 2%;
+}
+
+footer {
+  background-color: salmon;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.legal-text {
+  padding-left: 2%;
+}
+.miasma-vid {
+  display: flex;
+  height: fit-content;
+  justify-self: center;
+}
+
+.bandcamp-player {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: auto;
+}
+
+hr {
+  border: 2px dashed cornflowerblue;
+}
+
+@media screen and (max-width: 1470px) {
+  .intro-text {
+    margin: 2%;
+    text-align: left;
     font-size: large;
-    border: 0;
-    border-radius: 25px;
-    padding: 2%;
-    cursor: pointer;
-}
-
-::backdrop{
-    background-color: rgba(157, 28, 157, 0.462); 
-    opacity: 0.95;
-    backdrop-filter: blur(2px);
-
-}
-
-.contact-container{
-    margin-left: 1%;
-    padding-top: 5%;
-    padding-bottom: 8%;
-}
-.links-container{
-    display: grid;
-}
-.contact-button{
-    width: auto;
-    margin-left: 4%;
-    text-align:left;
-    min-height: 80px;
-    margin-top: 2%;
-}
-
-footer{
-    background-color: salmon;
-    bottom: 0;
-    position: fixed;
+  }
+  .resume-viewer {
+    width: 70%;
+  }
+  .resume-container {
     width: 100%;
+    height: 950px;
+  }
 }
 
+@media screen and (max-width: 1095px) {
+  .center_container {
+    flex-direction: column;
+  }
+  .profile-pic-container {
+    margin-bottom: 2%;
+  }
+  .profile-pic {
+    width: 75%;
+    height: 100%;
+    max-width: 450px;
+  }
 
-.legal-text{
-    padding-left: 2%;
-}
-.miasma-vid{
+  .projects-grid {
     display: flex;
-    height: fit-content;
-    justify-self: center;
-}
+    flex-direction: column;
+  }
 
-.giphy-embed{
-    background-color: aquamarine;
-}
-.bandcamp-player{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: auto;
-}
+  .intro-text {
+    text-align: center;
+  }
 
-hr{
-    border: 2px dashed cornflowerblue;
-}
+  .miasma-container {
+    width: 99%;
+  }
+  .miasma-vid {
+    width: 99%;
+  }
+  .resume-viewer {
+    height: 400px;
+  }
+  .resume-container {
+    height: 90%;
+  }
 
-@media screen and (max-width:1470px){
+  .wizard-container {
+    margin-top: 5%;
+    width: 99%;
+  }
 
-    .intro-text{
-        margin: 2%;
-        text-align: left;
-        font-size: large;
-    }
-    .resume-viewer{
-        width: 70%;
-    }
-    .resume-container{
-        width: 100%;
-        height: 950px;
-    }
+  #wizard-cover {
+    width: 80%;
+  }
 
-}
+  #deal-eyes {
+    width: 80%;
+  }
 
-@media screen and (max-width:1095px) {
-    .center_container{
-        flex-direction: column;
-    }
-    .profile-pic{
-        width: 75%;
-        height: 100%;
-        max-width: 450px;
-    }
+  .deal-container {
+    margin-top: 5%;
+    width: 99%;
+    margin-bottom: 5%;
+  }
 
-    .projects-grid{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .intro-text{
-        text-align: center;
-    }
-
-    .miasma-container{
-        width: 99%;
-    }
-    .resume-viewer{
-        height: 400px;
-    }
-    .resume-container{
-        height: 90%;
-    }
-
-    .wizard-container{
-        margin-top: 5%;
-        width: 99%;
-    }
-
-    .wizard-container .screenshot{
-        width: 95%;
-    }
-
-    .deal-container{
-        margin-top: 5%;
-        width: 99%;
-    }
-    
+  .links-container {
+    font-size: medium;
+  }
 }
