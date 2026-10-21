@@ -210,6 +210,13 @@ body {
   padding: 25px;
 }
 
+.m-modal {
+  top: 50%;
+  left: 50%;
+  overflow: scroll;
+  display: flexbox;
+}
+
 .return {
   text-align: right;
   padding-top: 2%;
@@ -270,10 +277,65 @@ footer {
   width: auto;
 }
 
+.click-me-btn-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: auto;
+}
 hr {
   border: 2px dashed cornflowerblue;
 }
+/*
+REFERENCE FOR THE CAROUSEL: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Overflow/Carousels
 
+
+10/2/2026: Seemed to have found the issue with the height and not presenting the full text that goes under the bandcamp embed.
+I think it was because of some padding with the music-item class, so I just removed and now you can scroll down to see the text regardless of size.
+Next, I want to make sure the sizing and width look good at different sizes of the browser window. Then I think I also want to throw in like 2 more bandcamp embeds to see if the 
+audio gets overlaid. 
+
+10/21/2026: I had to update my resume that's embedded and I decided to just embed TUNIC for now since the updated resume feels more pressing right now. 
+Next steps are probably: 
+add more bandcamp embeds, 
+include buttons that scroll to the next embed for you since it's a little janky right now, 
+and figure out how to deal with the audio being overlaid (I haven't tried it yet but I'm assuming that what's gonna happen)
+*/
+.bandcamp-embed {
+  border: 0;
+  width: 80%;
+  height: 800px;
+  padding-top: 2%;
+  justify-self: center;
+}
+
+#music-carousel {
+  width: 600px;
+  height: max-content;
+  padding: 10px;
+  display: flex;
+  gap: 4vw;
+}
+#music-carousel {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  overflow-y: auto;
+}
+
+.music-item {
+  list-style-type: none;
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
+
+  flex: 0 0 100%;
+  height: 100%;
+}
+.music-item {
+  scroll-snap-align: center;
+}
+.music-item:nth-child(even) {
+  background-color: cyan;
+}
 @media screen and (max-width: 1470px) {
   .intro-text {
     margin: 2%;
@@ -345,5 +407,15 @@ hr {
 
   .links-container {
     font-size: medium;
+  }
+
+  ul {
+    width: 95%;
+  }
+  .modal.content {
+    height: 75%;
+  }
+  #music-carousel {
+    width: auto;
   }
 }

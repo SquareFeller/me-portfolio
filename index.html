@@ -242,7 +242,11 @@
               </div>
               <div class="content">
                 <br />
-                <img src="img/wizard_cover.png" alt="Wizard Wobble cover art" id="wizard-cover" />
+                <img
+                  src="img/wizard_cover.png"
+                  alt="Wizard Wobble cover art"
+                  id="wizard-cover"
+                />
                 <h1>Development</h1>
                 <p>
                   <i>Wizard Wobble</i> was developed in 5 weeks in my first game
@@ -319,7 +323,11 @@
               </div>
               <div class="content">
                 <br />
-                <img src="img/deal_eyes.png" alt="Eyes from Killer Deal" id="deal-eyes"/>
+                <img
+                  src="img/deal_eyes.png"
+                  alt="Eyes from Killer Deal"
+                  id="deal-eyes"
+                />
                 <h1>Development</h1>
                 <p>
                   <i>Killer Deal</i> was developed in a week as a submission for
@@ -398,9 +406,7 @@
           <div class="contact-button">
             <h2>
               <i class="fa-brands fa-linkedin fa-lg"></i>
-              <a
-                href="https://www.linkedin.com/in/isai-rincon"
-                target="_blank"
+              <a href="https://www.linkedin.com/in/isai-rincon" target="_blank"
                 >https://www.linkedin.com/in/isai-rincon/
               </a>
             </h2>
@@ -413,19 +419,63 @@
       <p class="legal-text">jumpscare! boo!</p>
     </footer>
   -->
-    <div>
-      <iframe
-        class="bandcamp-player"
-        style="border: 0; height: 42px"
-        src="https://bandcamp.com/EmbeddedPlayer/album=2708032815/size=small/bgcol=333333/linkcol=FF5CFF/transparent=true/"
-        seamless
-        ><a
-          href="https://lifeformed.bandcamp.com/album/tunic-original-game-soundtrack"
-          >TUNIC (Original Game Soundtrack) by Lifeformed × Janice Kwan</a
-        ></iframe
+    <div class="click-me-btn-container">
+      <button
+        class="click-me-btn"
+        command="show-modal"
+        commandfor="music-modal"
       >
+        <h2 class="click-me" style="color: black">Click Me! 🎵</h2>
+      </button>
     </div>
 
+    <div>
+      <dialog class="modal" id="music-modal">
+        <div class="return">
+          <button class="return-btn" commandfor="music-modal" command="close">
+            Return
+          </button>
+        </div>
+        <ul id="music-carousel">
+          <li data-accname="item 1" class="music-item">
+            <div class="content" style="display: grid">
+              <iframe
+                class="bandcamp-embed"
+                loading="lazy"
+                src="https://bandcamp.com/EmbeddedPlayer/album=2708032815/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+                seamless
+                ><a
+                  href="https://lifeformed.bandcamp.com/album/tunic-original-game-soundtrack"
+                  >TUNIC (Original Game Soundtrack) by Lifeformed × Janice
+                  Kwan</a
+                ></iframe
+              >
+              <h4
+                style="
+                  overflow-y: auto;
+                  height: auto;
+                  max-width: fit-content;
+                  margin: 4%;
+                "
+              >
+                I must confess that I still need to play <i>TUNIC</i>, but its
+                phenomenal soundtrack has me so excited for whenever I get the
+                chance to dive in. From the very first track, it paints such a
+                gorgeous, meditative picture. Whether I am going to bed, or
+                taking a long bus ride, or working on a project (like this
+                website), this soundtrack has always been a go-to for focus and
+                tranquility. And I can't wait to hear this music in-game and
+                associate new memories and experiences with it!
+              </h4>
+            </div>
+          </li>
+
+          <li data-accname="item 2" class="music-item">
+            <h2>hii. more music here soon!</h2>
+          </li>
+        </ul>
+      </dialog>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
